@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "brandon";
+  font-weight: bold;
+  src: url("../fonts/Brandon_bld.otf");
+}
+@font-face {
+  font-family: "brandon";
+  src: url("../fonts/Brandon_reg.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  src: url("../fonts/Sentinel-Book.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  src: url("../fonts/Sentinel-Bold.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  src: url("../fonts/Sentinel-Bold.otf");
+}
+@font-face {
+  font-family: "Sentinel";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/Sentinel-BoldItalic.otf");
+}
+
+
+
+body {
+  font: 14pt/1.5 sentinel;
+}
+
+a {
+  border-bottom: 1px solid;
+  color: #000;
+  font-weight: bold;
+}
+a:hover {
+  color: #555;
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: brandon;
+  font-weight: bold;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+#small-logo {
+  max-width: 25% !important;
+}
+
+.btn {
+  background: #000;
+  color: #FFF;
+  padding: 15px 40px;
+  font-family: brandon;
+  font-weight: bold;
+  font-size: 1.8rem;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  z-index: 0;
+  text-transform: uppercase;
+  transition: 200ms ease-in-out;
+}
+
+#topbutton {
+  margin-bottom: 7px;
+}
+
+nav.navbar {
+  padding: 15px 10px;
+  border: none;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 10%, transparent);
+}
+nav ul.nav {
+  font: 1.2em/1 brandon;
+  color: #000;
+}
+.nav>li>a {
+  padding: 8px 0;
+  margin: 0 20px;
+  font-weight: bold;
+  background: none !important;
+  border-bottom: 5px solid transparent;
+  transition: all 200ms ease-in-out;
+}
+.nav:hover>li.active>a {
+  border-bottom: 5px solid transparent;
+}
+.nav>li>a:hover, .nav>li>a:visited {
+  background: none;
+  border-bottom: 5px solid #FDDB00;
+  border-radius: 0;
+  color: #000;
+}
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+  background: none;
+  color: #000;
+  border-bottom: 5px solid #FDDB00;
+  border-radius: 0;
+}
+.nav>li>a.blog:hover {
+  border-bottom: 5px solid #00D6C9;
+}
+
+
+.jumbotron {
+  min-height: 100vh;
+  background: none;
+}
+#home .logo {
+  margin-top: 10vh;
+}
+#home {
+  text-align: center;
+}
+#home .title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
+  margin: 0;
+}
+#home .subtitle {
+  font-size: 2rem;
+}
+#home .buttons {
+  margin-top: 25px;
+}
+
+#home {
+  margin-bottom: 200px;
+}
+
+#faq .question:nth-child(even) {
+  margin-bottom: 70px;
+  float: left;
+}
+
+#faq .question:nth-child(odd) {
+  margin-top: 70px;
+  float: right;
+}
+
+#sponsors a {
+  border-bottom: none;
+}
+#sponsors img {
+  margin: 20px;
+  max-height: 100px;
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+#sponsors .partner img {
+  max-height: 150px;
+}
+#sponsors .row {
+  margin-bottom: 50px;
+}
+#sponsors .gold img {
+  max-height: 120px;
+  max-width: 25%;
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+}
+#sponsors .silver img {
+  opacity: 0.4;
+  max-height: 90px;
+}
+#sponsors .trench img {
+  max-height: 60px;
+  max-width: 20%;
+  opacity: 0.4;
+}
+#sponsors h3 {
+  color: #666;
+  border-bottom: 4px solid;
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+}
+#sponsors .filler {
+  margin: 120px 0;
+  color: #ddd;
+}
+#sponsors img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter:    grayscale(0%);
+  -ms-filter:     grayscale(0%);
+  -o-filter:      grayscale(0%);
+  opacity: 1;
+}
+#sponsors .you {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-weight: normal;
+  background: none;
+  border: 2px dashed;
+  display: inline-block;
+  font-family: "Brandon";
+  text-decoration: none;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.2;
+  opacity: 0.4;
+  transition: all 100ms ease-in-out;
+}
+#sponsors .you span {
+  display: block;
+  font-size: 2em;
+  font-family: "Brandon";
+  font-style: italic;
+  font-weight: bold;
+}
+#sponsors .you:hover {
+  opacity: 1;
+}
+#sponsorship {
+  padding-top: 100px;
+}
+#sponsorship .btn {
+  background: none;
+  border: 4px solid;
+  width: 230px;
+  padding: 12px;
+  margin: 20px 0;
+  margin-top: 40px;
+  display: block;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  transition: all .2s ease-in-out;
+}
+#sponsorship form {
+  font-family: "Brandon";
+  margin-bottom: 40px;
+}
+#sponsorship .btn:hover {
+  background: #000;
+  color: #FFF;
+  border-color: #000;
+}
+#sponsorship input {
+  width: 100%;
+  padding:5px 10px;
+  border: 4px solid;
+  font-size: 1.2em;
+}
+#sponsorship input:focus {
+  outline: none;
+}
+#sponsorship img {
+  width: 100%;
+  border: 1px solid #FDDB00;
+  border-left-width: 20px;
+}
+
+#sponsors label {
+  display: block;
+  margin-top: 20px;
+  font-size: 1.2em;
+  &.left {
+  float: left;
+  margin: 0;
+  margin-right: 50px;
+  }
+}
+#sponsorship > div {
+  margin-bottom: 40px;
+}
+#sponsorship h3 {
+  font-size: 1.6em;
+  font-family: sentinel;
+  font-style: italic;
+}
+#sponsorship .say {
+  margin-top: 100px;
+}
+#sponsorship iframe {
+  margin: 30px 0;
+  border: none;
+}
+
+.large-sponsor {
+  max-width: 85%
+}
+
+#judges img {
+  height: 180px;
+  margin: auto;
+  display: block;
+}
+#judges h3 {
+  font-size: 1.5em;
+  margin-top: 0px !important;
+}
+
+.jrow {
+  margin-bottom: 30px;
+}
+
+#contact {
+  padding: 50px;
+  margin-bottom: 0px;
+}
+#contact h2 {
+  margin: 0;
+}
+#contact .location {
+  padding: 20px;
+  background: rgba(0,0,0,0.1);
+  font-family: brandon;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  #home .title {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+  }
+  #contact {
+  padding: 20px;
+  margin: 20px;
+  }
+  #faq .question {
+  margin: 10px auto !important;
+  float: left !important;
+  }
+}
